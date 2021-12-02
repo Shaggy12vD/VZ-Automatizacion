@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<HTML>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<link rel="stylesheet" href="Style.css">
+		<title>Citas</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+	</head>
+		
+	</head>
+	<style>
+	</style>
+	<header>
+		
+	</header>
+	
+	<body>
+		
+		<div>
+			<nav>
+				<div class="menu">
+					<a class="a1" href="index.html">VZ Automatizacion</a>
+				</div>
+				<ul class="nav-links">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="productos_y_servicios.html">Productos y Servicios</a></li>
+					<li><a href="nosotros.html">Nosotros</a></li>
+					<li><a href="citas.html">Citas</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+				</ul>
+				<div class="burger">
+					<div class="line1"></div>
+					<div class="line2"></div>
+					<div class="line3"></div>
+				</div>
+			</nav>
+			<script src="app.js"></script>
+		</div>
+		
+	</body>
+	<footer>
+		<div class="fadein">
+			<iframe name="votar" style="display:none;"></iframe>
+			<form target="votar" class="form" action="/Controlador/operaciones.php" method="post">
+					<fieldset class="field">
+						<header>
+							<h2 class="headerform">Agenda tu cita</h2>
+						</header>
+						<br>
+						<label class="fname" for="fname">Nombre:</label>
+						<input required="required" class="inputcss" type="text" id="fname" name="fname" placeholder="Nombre">
+						<label class="apellido" for="lname">Apellido:</label>
+						<input required="required" class="inputcss" type="text" id="lname" name="lname" placeholder="Apellido"><br><br>
+						<label class="email" for="email">Email:</label>
+						<input required="required" class="inputcss" type="email" id="email" name="email" placeholder="Correo">
+						<label class="numero" for="Numero">Numero:</label>
+						<input required="required" class="inputcss" type="tel" id="numero" name="numero" placeholder="Numero"><br><br>
+						<label class="fecha" for="fecha">Fecha:</label>
+						<input required="required" class="inputcss" type="date" name="fecha">
+						<input required="required" class="inputcss" type="time" name="hora" id="hora"><br><br>
+						<label class="asunto2" for="asunto">Asunto:</label><br>
+						<textarea class="asunto" name="asunto" id="asunto"  rows="10" placeholder="Agregue una descripcion"></textarea><br>
+						<input class="boton" type="submit" value="Enviar">
+					</fieldset>
+			</form>
+		</div>
+	</footer>
+</html>
